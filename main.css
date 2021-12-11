@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/back.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo{
+    position: absolute;
+    left: 1vw;
+    top: 3vh;
+    width: 60vh;
+}
+.myphoto{
+    position: absolute;
+    top:20%;
+    left: 35%;
+    width: 30%;
+    border-radius: 50%;
+    display: block;
+    border: 3px solid #fff;
+    
+}
+.box1{
+    width: 17vw;
+    height: 50vh;
+    background-color: rgba(255,255,255,0.46);
+    position: absolute;
+    left:8%;
+    top:30%;   
+    border: 3px solid white;
+    overflow: hidden;
+    
+} 
+.box2{
+    width: 16vw;
+    height: 50vh;
+    background: rgba(255,255,255,0.46);
+    position: absolute;
+    left:76%;
+    top:30%;   
+    border: 3px solid #fff;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    padding-bottom:60%;
+    margin-top: 40;
+    position: relative;
+    left: 0%;
+}
+li a{
+    font-size: 200%;  
+    text-decoration: none;
+    margin: auto;
+    width: auto;
+    border: 0px solid green;
+    padding-left:6%;
+    padding-bottom:0;
+    padding-right: 9%;
+    padding-top: 0;
+    
+    
+}
+li a:hover {
+    background-color: darkblue;
+    color: yellow;
+    transform: scale(1.5);
+    }
+
+.zoom1{
+    font-size: 300%;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    
+    animation: zoom1 16s linear infinite;
+    opacity: 0;
+}
+@keyframes zoom1{
+    0%{
+        transform: translateX(-80vw);
+        opacity: 0;
+    }
+    1%{
+        transform: translate(-50%,0);
+        opacity: 1;
+        }
+     24%{
+        transform: translate(-50%,0);
+        opacity: 1;
+    }
+    25%{
+        transform: translateX(+80vw);
+        opacity: 0;
+    }
+}
+.zoom2{
+    font-size: 300%;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    animation: zoom2 16s linear infinite;
+    opacity: 0;
+}
+@keyframes zoom2{
+    25%{
+        transform: translateX(-80vw);
+        opacity: 0;
+    }
+    26%{
+        transform: translateX(0);
+        transform: translate(-50%,0);
+        opacity: 1;
+        }
+     49%{
+        transform: translateX(0);
+        transform: translate(-50%,0);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(+80vw);
+        opacity: 0;
+    }
+}
+.zoom3{
+    font-size: 300%;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%,-50%);
+    animation: zoom3 16s linear infinite;
+    opacity: 0;
+}
+@keyframes zoom3{
+    50%{
+        transform: translateX(-80vw);
+        opacity: 0;
+    }
+    51%{
+        transform: translate(-50%,0);
+        opacity: 1;
+        }
+     74%{
+        transform: translate(-50%,0);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(+80vw);
+        opacity: 0;
+    }
+}
+.zoom4{
+    font-size: 300%;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    animation: zoom4 16s linear infinite;
+    opacity: 0;
+}
+@keyframes zoom4{
+    75%{
+        transform: translateX(-80vw);
+        opacity: 0;
+    }
+    76%{
+        transform: translate(-50%,0);
+        opacity: 1;
+        }
+     99%{
+        transform: translate(-50%,0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(+80vw);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+

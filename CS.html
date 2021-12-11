@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coming Soon</title>
+	<link rel="stylesheet" href="CS.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+    <div class="background">
+       <a href="index.html"> <img src="https://i.imgur.com/P7QoUUy.png" class="logo"></a>
+        <div class="text"> 
+            <h1>Coming Soon.</h1><br><h2>Any Suggestions??? </h2>
+            <input type="text" id="idea" placeholder="" class="any">
+            <button type="submit" class="button" id="submit">Submit</button>
+
+        </div>
+            
+        <ul>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a class="active"  href="CS.html">Blogs</a></li>
+        <li><a href="mycv.html">My Résumé</a></li>
+        <li><a  href="connect.html">Connect</a></li>
+        </ul>
+    </div>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+
+<script>
+
+ const firebaseConfig = {
+    apiKey: "AIzaSyCmF-cE6jmoHIpphVlA7azcRar-gSbwlqg",
+    authDomain: "database-b7d06.firebaseapp.com",
+    databaseURL: "https://database-b7d06-default-rtdb.firebaseio.com",
+    projectId: "database-b7d06",
+    storageBucket: "database-b7d06.appspot.com",
+    messagingSenderId: "319904948617",
+    appId: "1:319904948617:web:c3eab67dc61d4aef694158"
+  };
+
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var idea;
+
+  function getdata(){
+      idea = document.getElementById('idea').value;
+  }
+
+  document.getElementById('submit').onclick = function(){
+        getdata();
+if (idea=="") 
+{
+
+    return false;
+    
+}
+else
+{
+    firebase.database().ref(idea).set({
+        Idea: idea,
+    })
+      .then(()=>{
+        window.location="thankyou.html"
+    })
+    
+  }
+  }
+
+</script>
+       
+    
+</body>
+</html>
