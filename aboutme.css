@@ -3,6 +3,7 @@
     padding: 0;
     font-family: "Arial", Helvetica, sans-serif;
 }
+
 .background{
     width: 100%;
     height: 100vh;
@@ -12,32 +13,12 @@
     position: relative;
     overflow: hidden;
 }
+
 .logo{
     position: absolute;
     left: 1vw;
     top: 3vh;
     width: 60vh;
-}
-.box3{
-    width: 60vw;
-    height: 70vh;
-    background-color:rgba(255,255,255,.5);
-    position: absolute;
-    left:3%;
-    top:20%;   
-    border: 0.25vw solid white;
-}
-p{
-    padding-top:2vh;
-    text-align: center;
-    font-size:2.7vw;
-    
-}
-.Tom{
-    position: absolute;
-    left: 70%;
-    top:25%;
-    width: 25%;
 }
 ul{
     position: absolute;
@@ -47,6 +28,7 @@ ul{
 }
 ul li{
     display: inline;
+    padding: ;
     
 }
 ul li a{
@@ -63,4 +45,63 @@ ul li a{
 }
 ul li a:hover:not(.active){
     background-color: gray;
+}
+.form {
+    position: absolute;
+    top: 16vh;
+    left:20vw;
+    padding: 1vw;
+
+}
+input[type=text], select, textarea {
+    width: 52vw;
+    background: rgba(0, 0, 124, 0.4);
+    color:white;
+    padding: 0.6vw;
+    border: 0.1vw solid #ccc;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+    
+    margin: 1vh;
+}
+input[type=big],select, textarea {
+    width: 52vw;
+    height: 15vw;
+    background-color: darkblue;;
+    color:white;
+    padding: 1vw;
+    border: 0.1vw solid #ccc;
+    border-radius: 1vw;
+    margin: 1vh;
+    background: rgba(0, 0, 124, 0.4);
+    font-size: 1.2vw;
+    
+    margin: 1vh;
+}
+input[type=text]:focus{
+  background-color: white; 
+    color:black;
+}
+textarea:focus{
+  background-color: white; 
+    color:black;
+}
+.button {
+    background-color:rgb(0,0,124);
+    
+    color: white;
+    padding: 0.5vw 1.1vw;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    position:absolute;
+    bottom: -5vh;
+    right: 25vw;
+    font-size: 1.5vw;
+}
+  
+    
+::placeholder{
+    color:white;
+    opacity: 0.8;
 }
