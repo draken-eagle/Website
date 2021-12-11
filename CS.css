@@ -57,8 +57,9 @@ input[type=text]:focus{
     color: white;
     padding: 0.5vw 1.1vw;
     border: none;
-    border-radius: 4px;
+    border-radius: 1vw;
     cursor: pointer;
+    font-size: 3vh;
 }
  
 ul{
