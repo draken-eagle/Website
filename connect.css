@@ -28,6 +28,7 @@ ul{
 }
 ul li{
     display: inline;
+    padding: ;
     
 }
 ul li a{
@@ -49,7 +50,6 @@ ul li a:hover:not(.active){
     position: absolute;
     top: 16vh;
     left:20vw;
-    border-radius: 5px solid white;
     padding: 1vw;
 
 }
@@ -58,21 +58,23 @@ input[type=text], select, textarea {
     background: rgba(0, 0, 124, 0.4);
     color:white;
     padding: 0.6vw;
-    border: 0.25px solid #ccc;
+    border: 0.1vw solid #ccc;
     border-radius: 1vw;
+    font-size: 1.2vw;
     
     margin: 1vh;
 }
 input[type=big],select, textarea {
     width: 52vw;
-    height: 40vh;
+    height: 15vw;
     background-color: darkblue;;
     color:white;
-    padding: 12px;
-    border: 1px solid #ccc;
+    padding: 1vw;
+    border: 0.1vw solid #ccc;
     border-radius: 1vw;
     margin: 1vh;
     background: rgba(0, 0, 124, 0.4);
+    font-size: 1.2vw;
     
     margin: 1vh;
 }
@@ -90,11 +92,12 @@ textarea:focus{
     color: white;
     padding: 0.5vw 1.1vw;
     border: none;
-    border-radius: 4px;
+    border-radius: 1vw;
     cursor: pointer;
     position:absolute;
     bottom: -5vh;
     right: 25vw;
+    font-size: 1.5vw;
 }
   
     
